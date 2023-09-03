@@ -11,15 +11,12 @@ public class MemberDto {
 
     private String name; // 회원의 이름
 
-    private String phoneNo; // 전화번호
-
     private String email; // 이메일
 
     public MemberDto(Member member) {
         this.id = member.getId();
         this.loginId = member.getLoginId();
         this.name = member.getName();
-        this.phoneNo = member.getPhoneNo();
         this.email = member.getEmail();
     }
 

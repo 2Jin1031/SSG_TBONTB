@@ -1,7 +1,7 @@
 package com.service;
 
 import com.domain.Member;
-import com.dto.TokenInfoDto;
+import com.dto.security.TokenInfoDto;
 import com.dto.member.MemberDto;
 import com.dto.member.MemberJoinDto;
 import com.dto.member.MemberLoginDto;
@@ -48,7 +48,6 @@ public class AuthService {
                 .password(encoder.encode(memberInfo.getPassword()))
                 .email(memberInfo.getEmail())
                 .name(memberInfo.getName())
-                .phoneNo(memberInfo.getPhoneNo())
                 .build();
 
         memberRepository.save(member);

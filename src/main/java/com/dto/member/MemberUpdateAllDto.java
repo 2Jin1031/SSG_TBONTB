@@ -8,7 +8,5 @@ public class MemberUpdateAllDto {
 
     private String name; // 회원의 이름
 
-    private String phoneNo; // 전화번호
-
     private String email; // 이메일
 }

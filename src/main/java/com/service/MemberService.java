@@ -55,7 +55,6 @@ public class MemberService {
             Member member = oMember.get();
             member.setName(member.getName());
             member.setEmail(member.getEmail());
-            member.setPhoneNo(member.getPhoneNo());
         }
 
     }

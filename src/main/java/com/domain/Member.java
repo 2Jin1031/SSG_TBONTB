@@ -33,16 +33,12 @@ public class Member implements UserDetails {
     @Column(name = "name")
     private String name; // 회원의 이름
 
-    @Column(name = "phn")
-    private String phoneNo; // 전화번호
-
     @Column(name="email")
     private String email; // 이메일
 
     public Member(MemberJoinDto memberInfo) {
         this.loginId = memberInfo.getLoginId();
         this.name = memberInfo.getName();
-        this.phoneNo = memberInfo.getPhoneNo();
         this.email = memberInfo.getEmail();
         this.password = memberInfo.getPassword();
     }
